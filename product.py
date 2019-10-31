@@ -7,13 +7,13 @@ class Product():
         self.amount = amount
     
     def printProduct(self):
-        print(self.prType, self.price, self.amount)
+        print(self.prType, self.price, self.amount + " hi")
         
     def __repr__(self):
         return ("{0} {1} {2}".format(self.prType , self.price, self.amount)  )
 
 def testProcut():
-    p = Product("shoes",350,1)
+    p = Product("shoes", 350, 1)
     p.printProduct()
     print(p)
 
